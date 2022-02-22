@@ -4,7 +4,6 @@ node_modules
 dist
 package-lock.json
 yarn-error.log
-server/package.json
 client/node_modules
 client/package-lock.json
 *.lock
