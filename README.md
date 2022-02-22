@@ -9,22 +9,31 @@ For mac:
 
 # Docker setup
 
-In root folder, run:
+In root folder, run following:
 
 ```
-make up
-make install
-make init-db
-make dev-server
+docker compose up -d
+yarn --cwd ./server
+yarn --cwd ./server init-db
+yarn --cwd ./server dev-server
+yarn --cwd ./client
 ```
 
 Now you can test the server at http://localhost:3005/ and you should get some generated data from the db. DB will be available at `postgres://root:root@127.0.0.1:5433/trustmary-codetest`.
 
-When you stop developing and want to shut down the db run `make down`
+When you stop developing and want to shut down the db run `docker compose down`
 
 # Problem
 
-We are tracking conversions on our customers sites and they are saved to the events table. A random car manufacturer called `mycompany` is using Trustmary to track conversions on their site. They want to show their customers how many persons have have been thinking about buying (type=page_view) and how many have bought (type=conversion) a car (path /car/:car_id).
+We are tracking conversions on our customers sites and they are saved to the events table. A random car manufacturer called `mycompany` (=organization_id) is using Trustmary to track conversions on their site. They want to show their customers how many persons have have been thinking about buying (type=`page_view`) and how many have bought (type=`conversion`) a car (path `/car/:car_id`).
 
-Create a React frontend component that can be used to
-wants to see what https://demo.trustmary.io/page-visitor-notification/
+Create a React frontend component that can be used to display this information on the customer website (eg. https://demo.trustmary.io/page-visitor-notification/).
+
+Is there anything you should implement in the backend?
+
+_Extras_:
+
+- +For a good looking design
+- +Show only events that have occured in the last 7 days
+- +Tests
+- +What would be the next steps?
