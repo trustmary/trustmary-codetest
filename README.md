@@ -27,9 +27,9 @@ When you stop developing and want to shut down the db run `docker compose down`
 
 We are tracking conversions on our customers sites and they are saved to the events table. A random car manufacturer called `mycompany` (=organization_id) is using Trustmary to track conversions on their site. They want to show their customers how many persons have have been thinking about buying (type=`page_view`) and how many have bought (type=`conversion`) a car (path `/car/:car_id`).
 
-Create a React frontend component that can be used to display this information on the customer website (eg. https://demo.trustmary.io/page-visitor-notification/).
+Backend should only return events from correct `organization_id` and with correct `path`.
 
-Is there anything you should implement in the backend?
+Create a React frontend component that can be used to display this information on the customer website (eg. https://demo.trustmary.io/page-visitor-notification/).
 
 _Extras_:
 
