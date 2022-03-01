@@ -1,9 +1,0 @@
-{
-  "env": {
-    "NODE_ENV": "development"
-  },
-  "watch": ["./**"],
-  "ext": "js,ts,json",
-  "ignore": ["node_modules", "src/**/*.spec.ts"],
-  "exec": "ts-node ./src/routes.ts"
-}
