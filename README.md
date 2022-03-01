@@ -6,6 +6,7 @@ Create a simple React app with Typescript that can display the component based o
 
 This is an example of what the customer might expect to see, you can do your own design:
 ![popup](popup.png)
+
 Here you can see it live https://demo.trustmary.io/page-visitor-notification/.
 
 _Extras_:
