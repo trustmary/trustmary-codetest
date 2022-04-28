@@ -18,4 +18,4 @@ _Extras_:
 
 # How to submit
 
-Create a private repository to Github, when you are ready add `@infr` (Kim Salmi) to the repository (Settings -> Collaborators) and send us an email.
+Create a private repository to Github, when you are ready add `@terolindeman` (Tero Lindeman) to the repository (Settings -> Collaborators) and send us an email.
