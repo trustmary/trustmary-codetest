@@ -14,7 +14,8 @@ _Extras_:
 - For a good looking design
 - Show only events that have occured in the last 7 days
 - Tests
-- What would be the next steps?
+- What would be the next steps? How would you ensure your code will continue to work in the future?
+  
 
 # How to submit
 
